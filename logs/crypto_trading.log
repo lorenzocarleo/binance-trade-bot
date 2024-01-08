@@ -1,0 +1,6 @@
+2024-01-08 18:57:27,770 - crypto_trading_logger - INFO - Starting
+2024-01-08 19:29:27,527 - crypto_trading_logger - INFO - Starting
+2024-01-08 19:30:35,432 - crypto_trading_logger - INFO - Starting
+2024-01-08 19:33:49,704 - crypto_trading_logger - INFO - Starting
+2024-01-08 19:33:50,609 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 19:33:50,610 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
