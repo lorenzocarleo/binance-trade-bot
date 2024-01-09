@@ -8,6 +8,10 @@ from .logger import Logger
 from .scheduler import SafeScheduler
 from .strategies import get_strategy
 
+import requests
+import traceback
+
+
 
 def main():
     logger = Logger()
@@ -17,12 +21,23 @@ def main():
     db = Database(logger, config)
     manager = BinanceAPIManager(config, db, logger)
     # check if we can access API feature that require valid config
+#    try:
+#        _ = manager.get_account()
+#    except Exception as e:  # pylint: disable=broad-except
+#        logger.error("Couldn't access Binance API - API keys may be wrong or lack sufficient permissions")
+#        logger.error(e)
+#        return
     try:
         _ = manager.get_account()
-    except Exception as e:  # pylint: disable=broad-except
+    except Exception as e:
         logger.error("Couldn't access Binance API - API keys may be wrong or lack sufficient permissions")
-        logger.error(e)
+        logger.error("Exception occurred: " + str(e))
+        logger.error("Traceback: " + traceback.format_exc())
+        response = requests.get('https://httpbin.org/ip')
+        logger.info("Current IP address: " + response.json()['origin'])
+        logger.error("Failed to get IP address: " + str(e))
         return
+
     strategy = get_strategy(config.STRATEGY)
     if strategy is None:
         logger.error("Invalid strategy name")

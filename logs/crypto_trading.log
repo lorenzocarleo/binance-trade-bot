@@ -4,3 +4,65 @@
 2024-01-08 19:33:49,704 - crypto_trading_logger - INFO - Starting
 2024-01-08 19:33:50,609 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
 2024-01-08 19:33:50,610 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
+2024-01-08 20:26:09,266 - crypto_trading_logger - INFO - Starting
+2024-01-08 20:26:10,149 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 20:26:10,150 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
+2024-01-08 20:26:59,267 - crypto_trading_logger - INFO - Starting
+2024-01-08 20:27:00,113 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 20:27:00,113 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
+2024-01-08 20:27:13,280 - crypto_trading_logger - INFO - Starting
+2024-01-08 20:27:15,121 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 20:27:15,122 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
+2024-01-08 20:30:37,165 - crypto_trading_logger - INFO - Starting
+2024-01-08 20:30:38,049 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 20:30:38,050 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
+2024-01-08 20:35:12,104 - crypto_trading_logger - INFO - Starting
+2024-01-08 20:35:13,016 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 20:35:13,016 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
+2024-01-08 20:39:02,996 - crypto_trading_logger - INFO - Starting
+2024-01-08 20:39:03,886 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 20:39:03,887 - crypto_trading_logger - ERROR - APIError(code=-2014): API-key format invalid.
+2024-01-08 20:45:56,842 - crypto_trading_logger - INFO - Starting
+2024-01-08 20:45:57,818 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-08 20:45:57,819 - crypto_trading_logger - ERROR - Exception occurred: APIError(code=-2014): API-key format invalid.
+2024-01-08 20:45:57,832 - crypto_trading_logger - ERROR - Traceback: Traceback (most recent call last):
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/crypto_trading.py", line 31, in main
+    _ = manager.get_account()
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/binance_api_manager.py", line 71, in get_account
+    return self.binance_client.get_account()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 1822, in get_account
+    return self._get('account', True, data=params)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 292, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 242, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 237, in _request
+    return self._handle_response()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 285, in _handle_response
+    raise BinanceAPIException(self.response)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+
+2024-01-08 20:45:58,271 - crypto_trading_logger - INFO - Current IP address: 129.41.46.2
+2024-01-08 20:45:58,272 - crypto_trading_logger - ERROR - Failed to get IP address: APIError(code=-2014): API-key format invalid.
+2024-01-09 09:13:44,911 - crypto_trading_logger - INFO - Starting
+2024-01-09 09:13:45,844 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-09 09:13:45,845 - crypto_trading_logger - ERROR - Exception occurred: APIError(code=-2014): API-key format invalid.
+2024-01-09 09:13:45,856 - crypto_trading_logger - ERROR - Traceback: Traceback (most recent call last):
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/crypto_trading.py", line 31, in main
+    _ = manager.get_account()
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/binance_api_manager.py", line 71, in get_account
+    return self.binance_client.get_account()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 1822, in get_account
+    return self._get('account', True, data=params)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 292, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 242, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 237, in _request
+    return self._handle_response()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 285, in _handle_response
+    raise BinanceAPIException(self.response)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+
+2024-01-09 09:13:46,465 - crypto_trading_logger - INFO - Current IP address: 129.41.46.2
+2024-01-09 09:13:46,465 - crypto_trading_logger - ERROR - Failed to get IP address: APIError(code=-2014): API-key format invalid.
