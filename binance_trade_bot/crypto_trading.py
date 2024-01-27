@@ -12,7 +12,6 @@ import requests
 import traceback
 
 
-
 def main():
     logger = Logger()
     logger.info("Starting")
@@ -21,7 +20,7 @@ def main():
     db = Database(logger, config)
     manager = BinanceAPIManager(config, db, logger)
     # check if we can access API feature that require valid config
-#    try:
+ #   try:
 #        _ = manager.get_account()
 #    except Exception as e:  # pylint: disable=broad-except
 #        logger.error("Couldn't access Binance API - API keys may be wrong or lack sufficient permissions")

@@ -66,3 +66,47 @@ binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format inv
 
 2024-01-09 09:13:46,465 - crypto_trading_logger - INFO - Current IP address: 129.41.46.2
 2024-01-09 09:13:46,465 - crypto_trading_logger - ERROR - Failed to get IP address: APIError(code=-2014): API-key format invalid.
+2024-01-09 11:04:05,189 - crypto_trading_logger - INFO - Starting
+2024-01-09 11:04:06,117 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-09 11:04:06,117 - crypto_trading_logger - ERROR - Exception occurred: APIError(code=-2014): API-key format invalid.
+2024-01-09 11:04:06,132 - crypto_trading_logger - ERROR - Traceback: Traceback (most recent call last):
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/crypto_trading.py", line 31, in main
+    _ = manager.get_account()
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/binance_api_manager.py", line 71, in get_account
+    return self.binance_client.get_account()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 1822, in get_account
+    return self._get('account', True, data=params)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 292, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 242, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 237, in _request
+    return self._handle_response()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 285, in _handle_response
+    raise BinanceAPIException(self.response)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+
+2024-01-09 11:04:06,664 - crypto_trading_logger - INFO - Current IP address: 129.41.46.2
+2024-01-09 11:04:06,664 - crypto_trading_logger - ERROR - Failed to get IP address: APIError(code=-2014): API-key format invalid.
+2024-01-09 11:04:50,468 - crypto_trading_logger - INFO - Starting
+2024-01-09 11:04:51,382 - crypto_trading_logger - ERROR - Couldn't access Binance API - API keys may be wrong or lack sufficient permissions
+2024-01-09 11:04:51,383 - crypto_trading_logger - ERROR - Exception occurred: APIError(code=-2014): API-key format invalid.
+2024-01-09 11:04:51,396 - crypto_trading_logger - ERROR - Traceback: Traceback (most recent call last):
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/crypto_trading.py", line 31, in main
+    _ = manager.get_account()
+  File "/Users/lorenzocarleo/git/binance-trade-bot/binance_trade_bot/binance_api_manager.py", line 71, in get_account
+    return self.binance_client.get_account()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 1822, in get_account
+    return self._get('account', True, data=params)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 292, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 242, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 237, in _request
+    return self._handle_response()
+  File "/Users/lorenzocarleo/.venv/lib/python3.9/site-packages/binance/client.py", line 285, in _handle_response
+    raise BinanceAPIException(self.response)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+
+2024-01-09 11:04:51,861 - crypto_trading_logger - INFO - Current IP address: 129.41.46.2
+2024-01-09 11:04:51,862 - crypto_trading_logger - ERROR - Failed to get IP address: APIError(code=-2014): API-key format invalid.
